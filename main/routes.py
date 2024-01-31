@@ -11,6 +11,9 @@ app_route=Blueprint('捷大',__name__,static_folder='static',template_folder='te
 def home():
     return render_template('base.html',page='map')
 
+@app_route.route('/about')
+def about():
+    return render_template('about.html')
 
 @app_route.route('/games/<name>/places')
 def places(name):

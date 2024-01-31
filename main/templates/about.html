@@ -1,4 +1,75 @@
 {% extends 'base.html' %}
 {% block main_content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    .about_title{
+        font-size: 4rem;
+    }
+    .about_text{
+        font-size: 1.5rem;
+    }
+    .card-link{
+        text-align: center;
+        display: block; 
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center about_title">Introduction</h2>
+            <p class="text-center about_text">This website was built by TimothyChen and maintain by CKCSC(成功高中電子計算機研習社).</p>
+            <p class="text-center about_text">Check out the <a href="https://github.com/ddd-dong/izcc2023MRT" target="_blank">GitHub repository</a> for more details.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center about_title">Contributor</h2>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="github-card card shadow" data-github="username" style="border-radius: 10px; margin-bottom: 20px;">
+                <img src="https://avatars.githubusercontent.com/u/52665482?v=4" alt="Profile Picture" class="card-img-top rounded-circle">
+                <div class="card-body">
+                    <h3 class="card-title text-center">TimothyChen</h3>
+                    <a href="https://github.com/Timothychen00" target="_blank" class="text-center card-link">
+                        <span style="display: inline-block; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px;">
+                            GitHub Profile</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="github-card card shadow" data-github="username" style="border-radius: 10px; margin-bottom: 20px;">
+                <img src="https://avatars.githubusercontent.com/u/61810671?v=4" alt="Profile Picture" class="card-img-top rounded-circle">
+                <div class="card-body">
+                    <h3 class="card-title text-center">ddd-dong</h3>
+                    <a href="https://github.com/ddd-dong" target="_blank" class="text-center card-link">
+                        <span style="display: inline-block; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px;">
+                        GitHub Profile</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="github-card card shadow" data-github="username" style="border-radius: 10px; margin-bottom: 20px;">
+                <img src="https://avatars.githubusercontent.com/u/61810671?v=4" alt="Profile Picture" class="card-img-top rounded-circle">
+                <div class="card-body">
+                    <h3 class="card-title text-center">ddd-dong</h3>
+                    <a href="https://github.com/ddd-dong" target="_blank" class="text-center card-link">
+                        <span style="display: inline-block; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px;">
+                            GitHub Profile</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {% endblock main_content %}
